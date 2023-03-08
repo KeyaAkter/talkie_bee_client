@@ -1,5 +1,5 @@
-const chat = () => {
+const Chat = () => {
   return <div>chat</div>;
 };
 
-export default chat;
+export default Chat;

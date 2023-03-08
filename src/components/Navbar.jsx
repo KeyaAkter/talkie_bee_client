@@ -11,6 +11,7 @@ const Navbar = () => {
           TalkieBee
         </Link>
       </div>
+
       <nav>
         <div className="flex gap-5 ">
           <Link
@@ -19,6 +20,7 @@ const Navbar = () => {
           >
             Login
           </Link>
+
           <Link
             to="/register"
             className="hover:text-violet-500 hover:underline underline-offset-2 duration-300"
@@ -26,6 +28,7 @@ const Navbar = () => {
             Register
           </Link>
         </div>
+
         {/* <div>
           <p>
             Logged in as : <span className="text-violet-500">Tanisha</span>
