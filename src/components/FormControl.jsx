@@ -6,7 +6,6 @@ const FormControl = ({
   formFields,
   setFormFields,
 }) => {
-  console.log(label);
   return (
     <div className="form-control flex flex-col gap-2 cursor-pointer">
       <label htmlFor={label}>{labelInnerText}</label>
