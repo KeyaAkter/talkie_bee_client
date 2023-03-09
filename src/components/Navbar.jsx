@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="logo">
         <Link
           to="/"
-          className="text-xl font-semibold hover:text-violet-500 duration-300"
+          className="text-xl font-semibold hover:text-emerald-500 duration-300"
         >
           TalkieBee
         </Link>
@@ -16,14 +16,14 @@ const Navbar = () => {
         <div className="flex gap-5 ">
           <Link
             to="/login"
-            className="hover:text-violet-500 hover:underline underline-offset-2 duration-300"
+            className="hover:text-emerald-500 hover:underline underline-offset-2 duration-300"
           >
             Login
           </Link>
 
           <Link
             to="/register"
-            className="hover:text-violet-500 hover:underline underline-offset-2 duration-300"
+            className="hover:text-emerald-500 hover:underline underline-offset-2 duration-300"
           >
             Register
           </Link>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
         {/* <div>
           <p>
-            Logged in as : <span className="text-violet-500">Tanisha</span>
+            Logged in as : <span className="text-emerald-500">Tanisha</span>
           </p>
         </div> */}
       </nav>
