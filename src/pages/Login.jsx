@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Button from "../components/Button";
+import ErrorMsg from "../components/ErrorMsg";
 import FormControl from "../components/FormControl";
 import SectionTitle from "../components/SectionTitle";
 
@@ -48,4 +49,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default React.memo(Login);

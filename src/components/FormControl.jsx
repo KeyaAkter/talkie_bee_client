@@ -1,3 +1,5 @@
+import React from "react";
+
 const FormControl = ({
   label,
   labelInnerText,
@@ -7,8 +9,10 @@ const FormControl = ({
   setFormFields,
 }) => {
   return (
-    <div className="form-control flex flex-col gap-2 cursor-pointer">
-      <label htmlFor={label}>{labelInnerText}</label>
+    <div className="form-control flex flex-col gap-2 ">
+      <label htmlFor={label} className="cursor-pointer">
+        {labelInnerText}
+      </label>
       <input
         type={inputType}
         placeholder={placeholder}
@@ -23,4 +27,4 @@ const FormControl = ({
   );
 };
 
-export default FormControl;
+export default React.memo(FormControl);
