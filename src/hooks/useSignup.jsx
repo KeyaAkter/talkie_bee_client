@@ -23,7 +23,7 @@ export const useSignup = () => {
 
     if (!res.ok) {
       setIsLoading(false);
-      setError(data); //experimental
+      setError(data);
     }
 
     if (res.ok) {

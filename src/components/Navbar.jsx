@@ -44,7 +44,7 @@ const Navbar = () => {
         {user && (
           <div className="flex gap-5 items-center">
             <p>
-              Logged in as :
+              Logged in as :{" "}
               <span className="text-emerald-500">{user.name}</span>
             </p>
 

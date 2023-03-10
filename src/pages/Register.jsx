@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../components/Button";
+import ErrorMsg from "../components/ErrorMsg";
 import FormControl from "../components/FormControl";
 import SectionTitle from "../components/SectionTitle";
 import { useSignup } from "../hooks/useSignup";
@@ -17,13 +18,6 @@ const Register = () => {
     e.preventDefault();
 
     await signup(formFields.name, formFields.email, formFields.password);
-
-    // // clear states
-    // setFormFields({
-    //   name: "",
-    //   email: "",
-    //   password: "",
-    // });
   };
 
   return (
@@ -60,11 +54,7 @@ const Register = () => {
 
         <Button text={isLoading ? "Registering..." : "Register"} submit />
 
-        {error && (
-          <p className="bg-rose-50 text-rose-500 p-5 rounded border border-rose-500">
-            {error}
-          </p>
-        )}
+        {error && <ErrorMsg error={error} />}
       </form>
     </div>
   );
