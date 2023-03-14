@@ -21,8 +21,8 @@ const Register = () => {
   };
 
   return (
-    <div className="register flex flex-col justify-center items-center mt-20">
-      <form onSubmit={handleRegister} className="flex flex-col gap-5">
+    <div className="register flex flex-col justify-center items-center mt-20 ">
+      <form onSubmit={handleRegister} className="flex flex-col gap-5 w-[25rem]">
         <SectionTitle title={"Register ..."} />
 
         <FormControl
